@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* it will take exact width and height of the element instead of adding padding */
 }
 /* global reset */
 body {
@@ -31,6 +32,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 p {
   margin-bottom: 15px;
@@ -48,7 +50,7 @@ li {
   margin-bottom: 10px;
 }
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -77,6 +79,7 @@ article {
 }
 .related {
   list-style: none;
+  margin-left: 0;
 }
 .main-header {
   margin-bottom: 60px;
@@ -85,11 +88,10 @@ article {
   /* height: 80px; */
 }
 aside {
-  padding: 50px 0;
+  padding: 50px 40px; /* aside element width increased to be in side with the article*/
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  width: 500px;
 }
 .post-img {
   width: 100%;
@@ -179,4 +181,42 @@ h2::after {
   position: absolute;
   top: -10px;
   right: -25px;
+}
+.author-image {
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
+  /* padding-left: 80px; */
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+
+/* avoid collapsing due to float */
+.clear-float {
+  clear: both;
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
 }
