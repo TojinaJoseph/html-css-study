@@ -1,1 +1,2 @@
 New apple file
+New line for conflicted
