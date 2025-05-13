@@ -2,5 +2,5 @@ New apple file
 New line for conflicted
 New apple file added
 checking for pull conflicts
-checking for pull requestsss
+checking for pull request
 
