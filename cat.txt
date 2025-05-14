@@ -3,3 +3,5 @@ SECOND COMMIT
 THIRD COMMIT
 FOURTH COMMIT
 bad commit
+
+for rebasing in master
